@@ -4,7 +4,8 @@
 <div class="container">
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
-<form method='POST' action='/create'>
+<form method='POST' action='/save'>
+{{ form.post_id() }}
 <div class="form-group">
     {{ form.title.label }} {{ form.title(maxlength="100", class="form-control", autofocus=true) }}
 </div>
